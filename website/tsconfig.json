@@ -1,18 +1,19 @@
 {
   "extends": "./.svelte-kit/tsconfig.json",
+  {
   "compilerOptions": {
-    "allowJs": true,
-    "checkJs": true,
-    "esModuleInterop": true,
+    "target": "ES2020",              // JS moderno con flatMap, includes, Object.entries
+    "module": "commonjs",            // per Node.js
+    "lib": ["ES2020", "DOM"],        // include le funzioni moderne + DOM se serve
+    "outDir": "dist",                // dove mettere i file compilati
+    "rootDir": "src",                // cartella sorgente
+    "strict": true,                  // controlli TypeScript più rigidi
+    "esModuleInterop": true,         // compatibilità con import di CommonJS
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "sourceMap": true,
-    "strict": true,
-    "moduleResolution": "bundler",
-    "target": "ES2022",
-    "module": "ESNext",
-    "lib": ["DOM", "ES2022"]
+    "skipLibCheck": true,            // evita errori su tipi di librerie esterne
+    "types": ["node", "geojson"],    // tipi inclusi
+    "resolveJsonModule": true        // permette import di file JSON
   },
-  "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte"]
+  "include": ["src/**/*.ts"],        // tutti i file TS nella cartella src
+  "exclude": ["node_modules", "dist"]
 }
