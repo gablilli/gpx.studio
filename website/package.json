@@ -30,6 +30,7 @@
         "@types/sortablejs": "^1.15.8",
         "@typescript-eslint/eslint-plugin": "^7.18.0",
         "@typescript-eslint/parser": "^7.18.0",
+        "@types/geojson": "^7946.0.8",
         "autoprefixer": "^10.4.20",
         "eslint": "^8.57.1",
         "eslint-config-prettier": "^9.1.0",
@@ -66,6 +67,7 @@
         "gpx": "1.0.0",
         "immer": "^10.1.1",
         "jszip": "^3.10.1",
+        "fast-xml-parser": "^4.2.4"
         "lucide-static": "^0.460.0",
         "lucide-svelte": "^0.460.1",
         "mapbox-gl": "^3.11.1",
