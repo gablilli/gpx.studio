@@ -232,7 +232,6 @@
             geolocate={false}
             hash={useHash}
         />
-        <OpenIn bind:files={options.files} bind:ids={options.ids} />
         <LayerControl />
         <GPXLayers />
         {#if $fileObservers.size > 1}
