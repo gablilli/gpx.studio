@@ -63,7 +63,7 @@
         "clsx": "^2.1.1",
         "dexie": "^4.0.8",
         "file-saver": "^2.0.5",
-        "gpx": "file:../gpx",
+        "gpx": "1.0.0",
         "immer": "^10.1.1",
         "jszip": "^3.10.1",
         "lucide-static": "^0.460.0",
