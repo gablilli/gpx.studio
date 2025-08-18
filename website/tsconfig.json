@@ -1,19 +1,19 @@
 {
-  "extends": "./.svelte-kit/tsconfig.json",
-  {
-  "compilerOptions": {
-    "target": "ES2020",              // JS moderno con flatMap, includes, Object.entries
-    "module": "commonjs",            // per Node.js
-    "lib": ["ES2020", "DOM"],        // include le funzioni moderne + DOM se serve
-    "outDir": "dist",                // dove mettere i file compilati
-    "rootDir": "src",                // cartella sorgente
-    "strict": true,                  // controlli TypeScript più rigidi
-    "esModuleInterop": true,         // compatibilità con import di CommonJS
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,            // evita errori su tipi di librerie esterne
-    "types": ["node", "geojson"],    // tipi inclusi
-    "resolveJsonModule": true        // permette import di file JSON
-  },
-  "include": ["src/**/*.ts"],        // tutti i file TS nella cartella src
-  "exclude": ["node_modules", "dist"]
+    "extends": "./.svelte-kit/tsconfig.json",
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strict": true,
+        "moduleResolution": "bundler"
+    }
+    // Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
+    // except $lib which is handled by https://kit.svelte.dev/docs/configuration#files
+    //
+    // If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
+    // from the referenced tsconfig.json - TypeScript does not merge them in
 }
