@@ -5,7 +5,6 @@
     import GPXStatistics from '$lib/components/GPXStatistics.svelte';
     import Map from '$lib/components/Map.svelte';
     import LayerControl from '$lib/components/layer-control/LayerControl.svelte';
-    import OpenIn from '$lib/components/embedding/OpenIn.svelte';
     import {
         gpxStatistics,
         slicedGPXStatistics,
