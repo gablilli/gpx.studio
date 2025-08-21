@@ -24,7 +24,6 @@
   },
   "scripts": {
     "build": "tsc",
-    "postinstall": "npm run build",
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write ."
   }
